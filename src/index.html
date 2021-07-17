@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>My todo app</title>
+<link rel="stylesheet" href="../src/css/style.css">
+</head>
+<body>
+
+<section class="container">
+    <div class="todo-create-wrapper">
+        <h1>Create task</h1>
+        <div class="create-task-wrapper">
+            <input type="text" name="task_name" id="task_name" class="form-control">
+            <button type="button" id="btn_add_task">Add task</button>
+        </div>
+    </div>
+    
+    <div class="todo-list-wrapper">
+        <div class="tasks-wrapper incomplete">
+            <h1>Incomplete tasks</h1>
+            <div>
+                <div class="incomplete-list">
+                </div>
+            </div>
+        </div>
+        <div class="tasks-wrapper completed">
+            <h1>Completed tasks</h1>
+            <div class="completed-list">
+            </div>
+        </div>
+    </div>
+</section>
+
+</body>
+</html>
+
+<script src="./js/app.js"></script>
+<script src="./js/todo/app.todo.js"></script>
+<script src="./js/todo/app.todo.add.js"></script>
+<script src="./js/todo/app.todo.completed.js"></script>
+<script src="./js/todo/app.todo.incomplete.js"></script>
+<script>
+    app.init()
+</script>
